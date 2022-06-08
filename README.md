@@ -17,9 +17,6 @@ and may change without any compatibility from one version to another. Although,
 I'll do my best to avoid any issues of this kind. Any known compatibility
 issues will be mentiones in the README file or version specific release notes.
 
-# Usage
-Follows soon.
-
 # Future development
 As said in the into of this file, uniframe is a work in progress. Where the
 main and only option now is to create rectangle shapes, I would like to
@@ -32,4 +29,5 @@ develop different shapes and options, such as:
 
 At this moment I develop what I need or what I would like to try out. Feel free
 to come up with suggestions or better, code! I do not have any roadmap for what
-I am going to develop, at least not yet.
+I am going to develop, at least not yet. If you have any ideas, you can create
+an issue for it.
