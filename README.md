@@ -28,7 +28,7 @@ develop different shapes and options, such as:
 - triangle shapes
 - diagonal bars
 
-and hopefully a lot more.
+...and hopefully a lot more.
 
 At this moment I develop what I need or what I would like to try out. Feel free
 to come up with suggestions or better, code! I do not have any roadmap for what
