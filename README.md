@@ -2,7 +2,7 @@
 
 This project is a work in progress that has the aim to create an easy way to
 generate 3D frame models for printing purposes. In the very first released
-version 0.0.2 it is possible to generate variable sized ractangles, with fixed
+version 0.0.2 it is possible to generate variable sized rectangles, with fixed
 positioned holes to mount one to another. The fixed position means the holes
 are always at the same distance from each other, based on the hole size
 (different hole sizes would not work together).
