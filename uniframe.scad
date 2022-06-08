@@ -7,7 +7,7 @@ function margin(b, d, m) = (b==false) ? d : d - (2*m) ;
 function is_margin(b, m) = (b==false) ? 0 : m ;
 
 module base(hole_size, cols, holes, w, mx=false, my=false, 
-    mz=false, m=0, verbose=false) {
+    mz=false, m=0, hm=0.25, verbose=false) {
     l = hole_size * (holes * 2) + hole_size;
     h = hole_size * (cols * 2);
     mgn_l = margin(mx, l, m);
@@ -19,7 +19,8 @@ module base(hole_size, cols, holes, w, mx=false, my=false,
         echo("Printing base dimensions:")
         echo("length: ", mgn_l)
         echo("heigth: ", mgn_h)
-        echo("width: ", mgn_w);
+        echo("width: ", mgn_w)
+        echo("hole_size: ", hole_size+hm);
     }
 
     difference() {
@@ -32,12 +33,10 @@ module base(hole_size, cols, holes, w, mx=false, my=false,
                     w+0.001,
                     (a*hole_size+a*hole_size-hole_size) - is_margin(mz, m)]) {
                     rotate([90,0,0]) {
-                        cylinder(w+0.002,d=hole_size+0.25);
+                        cylinder(w+0.002,d=hole_size+hm);
                     }
                 }
             }
         }
     }
 }
-
-//base(3, 2, 5, 5, mx=false, mz=false, my=false, m=0.1);
