@@ -40,5 +40,3 @@ module base(hole_size, cols, holes, w, mx=false, my=false,
         }
     }
 }
-
-//base(3, 2, 5, 5, mx=false, mz=false, my=false, m=0.1);
